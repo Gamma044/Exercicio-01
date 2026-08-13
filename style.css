@@ -3,6 +3,8 @@ body {
     background-color: #e2e8f0; /* Cor de fundo cinza claro */
     font-family: Arial, sans-serif;
     color: #333333; /* Cor do texto geral */
+    margin: 0;
+    padding: 20px;
 }
 
 /* 2. Estilizando e centralizando o Título */
@@ -11,19 +13,32 @@ h1 {
     color: #ffffff;            /* Texto branco */
     text-align: center;        /* Alinhamento ao centro */
     padding: 20px;             /* Espaço interno para o texto respirar */
+    border-radius: 8px;
 }
 
 /* 3. Estilizando os Parágrafos */
 p {
     text-align: center;        /* Texto centralizado */
     color: #475569;            /* Tom de cinza para o texto */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* 4. Criando um cartão simples para a lista */
 ul {
     background-color: #ffffff; /* Fundo branco para a lista */
-    text-align: center;
-    padding: 20px;
+    text-align: center;        /* Centraliza o texto das LI */
+    list-style-type: none;     /* REMOVE as bolinhas para não desalinharem no centro */
+    padding: 20px;             /* Padding uniforme já que não há marcadores */
     width: 300px;              /* Largura da caixa */
     margin: 0 auto;            /* Centraliza a caixa da lista na tela */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 5. Espaçamento dos itens da lista */
+li {
+    padding: 8px 0;            /* Cria uma área de clique/toque melhor */
+    color: #1e293b;            /* Cor do texto das tecnologias */
+    font-weight: bold;         /* Deixa as tecnologias em negrito */
 }
